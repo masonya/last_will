@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LastWill</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+ <section class="nav">
+   <h1 class="logo">App name</h1>
+   <dl class="menu">
+  <h2>Передаю</h2>
+    <dd><%= link_to 'Документы', documents_path %></dd>
+    <dd><%= link_to 'Наставления', instructions_path %></dd>
+  </dl>
+</section>
+
+    <%= yield %>
+  </body>
+</html>

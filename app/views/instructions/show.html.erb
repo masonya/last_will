@@ -1,14 +1,19 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @instruction.title %>
-</p>
+<section class="main">
 
-<p>
-  <strong>Body:</strong>
-  <%= @instruction.body %>
-</p>
+  <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_instruction_path(@instruction) %> |
-<%= link_to 'Back', instructions_path %>
+  <h1>
+    <strong></strong>
+    <%= @instruction.title %>
+  </h1>
+
+  <p class="doc_show">
+    <strong></strong>
+    <%= @instruction.body %>
+  </p>
+
+  <%= link_to 'Изменить', edit_instruction_path(@instruction) %> |
+  <%= link_to 'Назад', instructions_path %>
+
+</section>

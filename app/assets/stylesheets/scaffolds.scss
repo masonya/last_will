@@ -1,16 +1,19 @@
 body {
-  font-family: open sans;
+  font-family: PragmaticaLightC;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
   color: #545454;
 }
 
 p, td {
-  font-family: open sans;
+  font-family: PragmaticaLightC;
   font-size: 14px;
   line-height: 19px;
 }
+
+td {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 
 pre {
   background-color: #eee;
@@ -22,6 +25,7 @@ a {
   color: #666;
   font-size: 11px;
   text-decoration: none;
+
 
   &:hover {
     color: blue;
@@ -73,74 +77,142 @@ label {
 
 h1 {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 28px;
 
 }
 
 h2 {
    font-weight: bold;
+   font-size: 20px;
+ }
+
+ h3 {
    font-size: 18px;
  }
 
+
+ .section_header {
+   margin-left: 30px;
+ }
+
 .main {
-  width: 76vw;
+  width: 838px;
   height: 100vh;
-  padding-left: 300px;
-  padding-top: 40px;
+  padding-left: 280px;
+  padding-top: 105px;
 }
 
 .cards_area {
   width: 100%;
   height: 100%;
-  margin-top: 50px;
+  margin-top: 40px;
+  position:relative;
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
+
 }
 
 
 .card {
-  width: 220px;
-  height: 150px;
-  border-radius: 3%;
+  width: 206px;
+  height: 123px;
+  border-radius: 2%;
   position: relative;
-  margin-left: 50px;
-  background-color: #F9F9F9;
-  border-width: 1px;
-  border-color: #B7B7B7;
-  border-style: solid;
+  background-color: #F5F5F5;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
+
+
+ .card a {
+  color: rgba(0, 0, 0, 0);
+}
+
 
 .card_new {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  position: absolute;
+}
+
+.add {
+  height: 35px;
+  width: 35px;
+  background-image:
+  url(https://psv4.userapi.com/c848424/u138424346/docs/d7/a83941c75bc6/add_Montazhnaya_oblast_1.png?extra=_w5TbvoFz_C_8Yp-S-b2i24NMA_Qdd149wSRMN_Wa1MGYqO7axPPuvOuVSfBc5wnFI7e1ZLyeqG6ohTrdYQ9da-cZhhQ752z20BJ5QtJeBTDlgVByz0IaYDfbwno9yZ7oW2YgbWWq9H3h6TFmL1fhPjM);
+  background-size: cover;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 45px;
+
 }
 
  //  .card:first-of-type {
  //    margin-left: 0px;
  // }
 
-
-.action_area {
-  width: 100%;
+.delete {
+  width: 20px;
   height: 20px;
-  margin-top: 120px;
-  border-radius: 3%;
-  display: flex;
-  justify-content: space-around;
+  margin-top: -5px;
+  background-size: cover;
+  margin-left: 195px;
+  position: absolute;
+  background-image: url(https://psv4.userapi.com/c848424/u138424346/docs/d17/a13f566ad2fb/udalit_Montazhnaya_oblast_1.png?extra=TAZDxy1aiFWR-seYEPDwpqhYmeSrMhPDeynQqjrSCHMFkGsFxjzbVg3vpdJBz-UxiBewAuUs9url5DsqV2AQWnLu7AY8UYkbFtc3YYSvTdvmPmaN56_njbeuS0JgUrTwFT2OoXGMuy-FR5V_FzelD3b7);
+  display: none;
 }
 
-.card_title {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  text-align: center;
 
+.edit {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: 195px;
+  position: absolute;
+  background-image:
+  url(https://psv4.userapi.com/c848424/u138424346/docs/d9/b2eed62c365f/edit.png?extra=KHx3Bx43ZeUktFEuRhLK3kE4WCH4-RkGb5CMfoVo6vBG6qRnFFPCutLnR4wQ0pf87Y7b_dVLGd_K0Q5YCjA3VJlPzDrctQe1sp_kP4Lii3IpSbPbqphiGvYGOtkO00C5AhEfwJocE4XQe1ZXeI_JczdA);
+  background-size: cover;
+  display: none;
+}
+
+
+.card:hover .edit {
+  display:block;
+}
+
+.card:hover .delete {
+  display:block;
+}
+
+.card:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+}
+
+.previev {
+  width: 170px;
+  height: 58px;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  background-size: cover;
+  background-image: url(https://psv4.userapi.com/c848424/u138424346/docs/d15/da4fd05c54f8/Doc-01.png?extra=IByVxS2CsZPC7q5C2UYLMHGl-j3IrY2lWlsvXsubsE0pU4sbRLq_ckOLi6whkprkSPLF9F6r9absXJIqHPQRYqPmUym2MFg4emg7GOTcJljfcJmpZ-gK2VG8fkre8wBKymnfVIfEYyADuH9ibAUfXMp_);
+}
+
+
+.card_title {
+  margin-top: 75px;
+  margin-left: 20px;
+  position: absolute;
+  color: #B3B3B3;
+}
+
+
+.card_title h2 {
+  font-family: Pragmatica;
 }
 
 .doc_show {

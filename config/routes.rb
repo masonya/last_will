@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'transmit#index'
   resources :social_accounts
   resources :instructions
   resources :documents

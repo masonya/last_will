@@ -12,13 +12,24 @@
   <body>
 
  <section class="nav">
-   <h1 class="logo">App name</h1>
-   <dl class="menu">
-  <h2>Передаю</h2>
-    <dd><%= link_to 'Документы', documents_path %></dd>
-    <dd><%= link_to 'Наставления', instructions_path %></dd>
-    <dd><%= link_to 'Аккаунты', social_accounts_path %></dd>
-  </dl>
+   <h1 class="logo">Meta</h1>
+   <ul class="menu">
+  <h1>Передаю</h1>
+    <li><%= link_to 'Документы', documents_path %></li>
+    <li><%= link_to 'Аккаунты', social_accounts_path %></li>
+    <li><%= link_to 'Наставления', instructions_path %></li>
+    <li>Кошельки</li>
+    <li>Подписки</li>
+  </ul>
+</section>
+
+
+
+<section class="add_receiver">
+  <ul class="receivers">
+ <h3>Получатели</h3>
+   <li>+Получатель</li>
+ </ul>
 </section>
 
     <%= yield %>

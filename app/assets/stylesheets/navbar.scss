@@ -1,29 +1,30 @@
 .nav {
   height: 100vh;
-  width: 230px;
-  background-color: #F9F9F9;
+  width: 310px;
   position: absolute;
+  position: fixed;
 }
 
 .menu {
   height: 300px;
   width: 160px;
-  margin-left: 25px;
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
-dd {
-  padding-top: 20px;
-  line-height: 15px;
+li {
+  line-height: 35px;
+}
 
+ul {
+  list-style-type: none;
 }
 
 
 .menu a {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 
 .logo {
-  margin-left: 25px;
+  margin-left: 40px;
 }

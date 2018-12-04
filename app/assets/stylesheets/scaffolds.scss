@@ -1,7 +1,7 @@
 body {
   font-family: PragmaticaLightC;
   height: 100%;
-  color: #545454;
+  margin: auto;
 }
 
 p, td {
@@ -28,7 +28,7 @@ a {
 
 
   &:hover {
-    color: blue;
+    color: #00AEEF;
   }
 }
 
@@ -88,6 +88,7 @@ h2 {
 
  h3 {
    font-size: 18px;
+   color: #B3B3B3;
  }
 
 
@@ -207,7 +208,7 @@ h2 {
   margin-top: 75px;
   margin-left: 20px;
   position: absolute;
-  color: #B3B3B3;
+
 }
 
 

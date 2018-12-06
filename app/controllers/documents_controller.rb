@@ -5,6 +5,7 @@ class DocumentsController < ApplicationController
   # GET /documents.json
   def index
     @documents = Document.all
+    @instructions = Instruction.all
   end
 
   # GET /documents/1
@@ -25,6 +26,7 @@ class DocumentsController < ApplicationController
   # POST /documents.json
   def create
     @document = Document.new(document_params)
+    @document.user_id = 1
 
     respond_to do |format|
       if @document.save

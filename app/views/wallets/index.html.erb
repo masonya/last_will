@@ -1,29 +1,28 @@
-
 <section class="main">
 
   <p id="notice"><%= notice %></p>
-  <h1 class="section_header">Наставления</h1>
+  <h1 class="section_header">Кошельки</h1>
 
   <section class="cards_area">
-    <% @instructions.each do |instruction| %>
+    <% @wallets.each do |wallet| %>
       <div class="card">
         <div class="previev"></div>
         <div class="card_title">
-          <h3><%= instruction.title %></h3>
+          <h3><%= wallet.title %></h3>
         </div>
-        <%#= link_to 'Открыть', instruction %>
+        <%#= link_to 'Открыть', wallet %>
         <div class="edit">
-          <%= link_to '', edit_instruction_path(instruction) %>
+          <%= link_to '', edit_wallet_path(wallet) %>
         </div>
         <div class="delete">
-          <%= link_to '', instruction, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to '', wallet, method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
       </div>
     <% end %>
 
     <div class="card">
       <div class="card_new">
-        <%= link_to '', new_instruction_path %>
+        <%= link_to '', new_wallet_path %>
       </div>
       <div class="add">
       </div>

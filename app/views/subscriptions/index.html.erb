@@ -1,28 +1,28 @@
 <section class="main">
 
   <p id="notice"><%= notice %></p>
-  <h1 class="section_header">Аккаунты</h1>
+  <h1 class="section_header">Подписки</h1>
 
   <section class="cards_area">
-    <% @social_accounts.each do |social_account| %>
+    <% @subscriptions.each do |subscription| %>
       <div class="card">
         <div class="previev"></div>
         <div class="card_title">
-          <h3><%= social_account.title %></h3>
+          <h3><%= subscription.title %></h3>
         </div>
-        <%#= link_to 'Открыть', social_account %>
+        <%#= link_to 'Открыть', subscription %>
         <div class="edit">
-          <%= link_to '', edit_social_account_path(social_account) %>
+          <%= link_to '', edit_subscription_path(subscription) %>
         </div>
         <div class="delete">
-          <%= link_to '', social_account, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to '', subscription, method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
       </div>
     <% end %>
 
     <div class="card">
       <div class="card_new">
-        <%= link_to '', new_social_account_path %>
+        <%= link_to '', new_subscription_path %>
       </div>
       <div class="add">
       </div>

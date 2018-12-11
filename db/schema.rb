@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2018_12_09_104834) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "account_transfers", force: :cascade do |t|
     t.integer "transmitter_id"
     t.integer "receiver_id"
@@ -39,6 +42,7 @@ ActiveRecord::Schema.define(version: 2018_12_09_104834) do
   end
 
   create_table "social_accounts", force: :cascade do |t|
+    t.string "login"
     t.string "title"
     t.string "name"
     t.text "body"

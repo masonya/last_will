@@ -1,11 +1,11 @@
-  body {
-  font-family: PragmaticaLightC;
+body {
+  font-family: 'Pragmatica Cyrillic', arial;
   height: 100%;
   margin: auto;
 }
 
 p, td {
-  font-family: PragmaticaLightC;
+  font-family: 'PragmaticaLightC';
   font-size: 14px;
   line-height: 19px;
 }
@@ -24,6 +24,7 @@ a {
   color: #666;
   font-size: 11px;
   text-decoration: none;
+
 
   &:hover {
     color: #00AEEF;
@@ -50,6 +51,7 @@ a {
 
   ul li {
     font-size: 12px;
+
     list-style: square;
   }
 }
@@ -60,25 +62,16 @@ label {
 
 h1 {
   font-weight: bold;
-  font-size: 32px;
-  margin: auto;
+  font-size: 28px;
 }
 
 h2 {
-   font-size: 32px;
-   font-family: PragmaticaCyrillic;
-   margin: auto;
-   font-weight: normal;
-   color: inherit;
+   font-weight: bold;
+   font-size: 20px;
  }
 
  h3 {
    font-size: 18px;
-   font-weight: bold;
- }
-
- h4 {
-   font-size: 16px;
    font-weight: lighter;
  }
 
@@ -87,9 +80,9 @@ h2 {
  }
 
 .main {
-  width: 950px;
+  width: 838px;
   padding-left: 280px;
-  padding-top: 118px;
+  padding-top: 105px;
 }
 
 .cards_area {
@@ -187,8 +180,8 @@ h2 {
 }
 
 .card_title {
-  margin-top: 76px;
-  margin-left: 15px;
+  margin-top: 80px;
+  margin-left: 20px;
   position: absolute;
 }
 
@@ -201,55 +194,43 @@ h2 {
   width: 800px;
 }
 
-.user {
-  width: 33px;
-  height: 33px;
-  background-color: #CBCBCB;
-  position: fixed;
-  border-radius: 100%;
-  margin-top: 33px;
-  right: 33px;
-}
-
-.interval {
-  height: 105px;
-}
-
-
-
-
-
-
-textarea {
-  width: 609px;
-  height: 30px;
-  resize: none;
-  border-style: solid;
-  border-radius: 5px;
-  border-color: #979797;
-  font-size: 15px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-.data_output {
-  line-height: 30px;
-  margin-top: 50px;
-}
-
-
-
-
-.network_choice {
-  width: 609px;
-  height: 30px;
-  border-radius: unset;
-  background-color: white;
-  font-size: 15px;
-}
-
-
-.js-example-basic-multiple {
-  width: 609px;
-  height: 30px;
-}
+// 
+//
+//
+//
+//
+//
+//
+// textarea {
+//   width: 609px;
+//   height: 30px;
+//   resize: none;
+//   border-style: solid;
+//   border-radius: 5px;
+//   border-color: #979797;
+//   font-size: 15px;
+//   padding-left: 10px;
+//   padding-top: 10px;
+// }
+//
+// .data_output {
+//   line-height: 30px;
+//   margin-top: 50px;
+// }
+//
+//
+//
+//
+// .network_choice {
+//   width: 609px;
+//   height: 30px;
+//   border-radius: unset;
+//   background-color: white;
+//   font-size: 15px;
+// }
+//
+//
+// .js-example-basic-multiple {
+//   width: 609px;
+//   height: 30px;
+// }

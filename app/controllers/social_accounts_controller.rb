@@ -29,7 +29,7 @@ class SocialAccountsController < ApplicationController
 
     respond_to do |format|
       if @social_account.save
-        format.html { redirect_to @social_account, notice: 'Social account was successfully created.' }
+        format.html { redirect_to root_url, notice: 'Social account was successfully created.' }
         format.json { render :show, status: :created, location: @social_account }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class SocialAccountsController < ApplicationController
   def update
     respond_to do |format|
       if @social_account.update(social_account_params)
-        format.html { redirect_to @social_account, notice: 'Social account was successfully updated.' }
+        format.html { redirect_to root_url, notice: 'Social account was successfully updated.' }
         format.json { render :show, status: :ok, location: @social_account }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class SocialAccountsController < ApplicationController
   def destroy
     @social_account.destroy
     respond_to do |format|
-      format.html { redirect_to social_accounts_url, notice: 'Social account was successfully destroyed.' }
+      format.html { redirect_to root_url, notice: 'Social account was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -70,6 +70,6 @@ class SocialAccountsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def social_account_params
-      params.require(:social_account).permit(:title, :body)
+      params.require(:social_account).permit(:title, :body, :login)
     end
 end

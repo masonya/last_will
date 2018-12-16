@@ -43,6 +43,17 @@
   </section>
 
 
+  <%= form_for @social_account do |f| %>
+    <%= f.label :first_name %>:
+    <%= f.text_field :body %><br />
+
+    <%= f.label :last_name %>:
+    <%= f.text_field :body %><br />
+
+    <%= f.submit %>
+  <% end %>
+
+
   <section class="data_output">
     <h2>Выберите получателя</h2>
     <select class="js-example-basic-multiple" name="states[]" multiple="multiple">

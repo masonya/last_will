@@ -1,4 +1,5 @@
 .container {
+  font-family: 'Pragmatica Cyrillic', arial;
   width: 200px;
   height: 200px;
   text-align: center;
@@ -7,14 +8,12 @@
 
 .doc {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-
 }
 
 header {
-  margin-bottom: 70px;
   color: #656565;
+  margin-bottom: 70px;
+  text-align: left;
 }
 
 h2 {
@@ -28,12 +27,14 @@ input[type=submit] {
   border: none;
   border-radius: 7px;
   color: white;
-  padding: 16px 32px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin-left: auto;
   cursor: pointer;
+  vertical-align: middle;
+	text-align: center;
+  padding: 0 15px 0 25px;
+  position: relative;
 }
-
 
 input[type=file] {
   cursor: pointer;
@@ -55,7 +56,6 @@ input[type=file]:before {
   border: none;
   padding: 0 10px;
   text-align: left;
-
 }
 
 input[type=file]::-webkit-file-upload-button {
@@ -87,12 +87,4 @@ input[type=text] {
   box-sizing: border-box;
   resize: vertical;
   background-color:#f7f7f7
-
-}
-
-@media screen and (max-width: 600px) {
- input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
 }

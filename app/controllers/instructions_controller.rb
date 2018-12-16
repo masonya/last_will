@@ -29,7 +29,7 @@ class InstructionsController < ApplicationController
 
     respond_to do |format|
       if @instruction.save
-        format.html { redirect_to root_url, notice: 'Instruction was successfully created.' }
+        format.html { redirect_to @instruction, notice: 'Instruction was successfully created.' }
         format.json { render :show, status: :created, location: @instruction }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class InstructionsController < ApplicationController
   def update
     respond_to do |format|
       if @instruction.update(instruction_params)
-        format.html { redirect_to root_url, notice: 'Instruction was successfully updated.' }
+        format.html { redirect_to @instruction, notice: 'Instruction was successfully updated.' }
         format.json { render :show, status: :ok, location: @instruction }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class InstructionsController < ApplicationController
   def destroy
     @instruction.destroy
     respond_to do |format|
-      format.html { redirect_to root_url, notice: 'Instruction was successfully destroyed.' }
+      format.html { redirect_to instructions_url, notice: 'Instruction was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

@@ -1,32 +1,45 @@
 
-<section class="main">
+<!-- <section class="main">
 
-  <p id="notice"><%= notice %></p>
-  <h1 class="section_header">Документы</h1>
+    <p id="notice"><%= notice %></p>
+      <h1>Документы</h1>
 
-  <section class="cards_area">
-    <% @documents.each do |document| %>
-      <div class="card">
-        <div class="previev"></div>
-        <div class="card_title">
-          <h3><%= document.title %></h3>
-        </div>
-        <%#= link_to 'Открыть', document %>
-        <div class="edit">
-          <%= link_to '', edit_document_path(document) %>
-        </div>
-        <div class="delete">
-          <%= link_to '', document, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div>
-      </div>
-    <% end %>
+    <section class="cards_area">
 
-    <div class="card">
-      <div class="card_new">
-        <%= link_to '', new_document_path %>
-      </div>
-      <div class="add">
-      </div>
-    </div>
-  </section>
-</section>
+
+            <% @documents.each do |document| %>
+
+            <div class="card">
+
+                <div class="previev">
+                </div>
+
+                <div class="card_title">
+                  <h3><%= document.title %></h3>
+                </div>
+
+                <td><%#= link_to 'Открыть', document %></td>
+
+                <div class="edit">
+                  <td><%= link_to 'Из', edit_document_path(document) %></td>
+                </div>
+
+                <div class="delete">
+                  <td><%= link_to 'Уд', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                </div>
+
+            </div>
+
+            <% end %>
+
+            <div class="card">
+              <div class="card_new">
+                <%= link_to 'Новый документ Новый документ Новый документ Новый документНовый документНовый документНовый документНовый документНовый документНовый документ Новый документ Новый документНовый документ', new_document_path %>
+              </div>
+
+              <div class="add">
+              </div>
+            </div>
+
+    </section>
+</section> -->

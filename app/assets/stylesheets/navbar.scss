@@ -8,21 +8,32 @@
 .sidebar {
   height: 300px;
   width: 160px;
-  margin-top: 70px;
+  margin-top: 25px;
 }
 
-li {
+.transmit{
+  margin-top: 50px;
+}
+
+.transmit a {
+  font-size: 20px;
+  margin-left: 40px;
+  color: black;
+}
+
+.sidebar li {
   line-height: 35px;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .sidebar a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .logo {
   margin-left: 40px;
+  margin-top: 40px;
+}
+
+ul {
+  list-style-type: none;
 }

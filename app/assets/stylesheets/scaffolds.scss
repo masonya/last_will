@@ -1,4 +1,4 @@
-body {
+  body {
   font-family: PragmaticaLightC;
   height: 100%;
   margin: auto;
@@ -25,7 +25,6 @@ a {
   font-size: 11px;
   text-decoration: none;
 
-
   &:hover {
     color: #00AEEF;
   }
@@ -51,7 +50,6 @@ a {
 
   ul li {
     font-size: 12px;
-
     list-style: square;
   }
 }
@@ -62,16 +60,25 @@ label {
 
 h1 {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 32px;
+  margin: auto;
 }
 
 h2 {
-   font-weight: bold;
-   font-size: 20px;
+   font-size: 32px;
+   font-family: PragmaticaCyrillic;
+   margin: auto;
+   font-weight: normal;
+   color: inherit;
  }
 
  h3 {
    font-size: 18px;
+   font-weight: bold;
+ }
+
+ h4 {
+   font-size: 16px;
    font-weight: lighter;
  }
 
@@ -80,9 +87,9 @@ h2 {
  }
 
 .main {
-  width: 838px;
+  width: 950px;
   padding-left: 280px;
-  padding-top: 105px;
+  padding-top: 118px;
 }
 
 .cards_area {
@@ -180,8 +187,8 @@ h2 {
 }
 
 .card_title {
-  margin-top: 80px;
-  margin-left: 20px;
+  margin-top: 76px;
+  margin-left: 15px;
   position: absolute;
 }
 
@@ -194,7 +201,19 @@ h2 {
   width: 800px;
 }
 
+.user {
+  width: 33px;
+  height: 33px;
+  background-color: #CBCBCB;
+  position: fixed;
+  border-radius: 100%;
+  margin-top: 33px;
+  right: 33px;
+}
 
+.interval {
+  height: 105px;
+}
 
 
 

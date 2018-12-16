@@ -13,13 +13,15 @@
 
  <section class="nav">
    <h1 class="logo">Meta</h1>
+   <h3 class="transmit"><%= link_to 'Передаю', root_path %></h3>
    <ul class="sidebar">
-  <h1>Передаю</h1>
+  <!-- <h1>Передаю</h1> -->
     <li><%#= link_to 'Документы', documents_path %></li>
     <li><%#= link_to 'Аккаунты', social_accounts_path %></li>
     <li><%#= link_to 'Наставления', instructions_path %></li>
     <li><%#= link_to 'Подписки', subscriptions_path %></li>
     <li><%#= link_to 'Кошельки', wallets_path %></li>
+
 
     <li><a href="#s1">Документы</a></li>
     <li><a href="#s2">Аккаунты</a></li>
@@ -30,14 +32,9 @@
   </ul>
 </section>
 
-<section class="add_receiver">
-  <ul class="receivers">
- <h3>Получатели</h3>
-   <li>User@gmail.com  x</li>
-   <li>User@gmail.com  x</li>
-   <li>+Получатель</li>
- </ul>
-</section>
+<div class="user">
+
+</div>
 
     <%= yield %>
 

@@ -24,16 +24,16 @@
   </section>
 
 
-  <!-- <div class="field">
+  <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
-  </div> -->
+  </div>
 
   <section class="data_output">
     <h2>Введите данные</h2>
     <div class="field">
       <%#= form.label :Логин %>
-      <%= form.text_area :body, placeholder: "Логин"%>
+      <%= form.text_area :login, placeholder: "Логин"%>
     </div>
 
     <div class="field">
@@ -41,6 +41,17 @@
       <%= form.text_area :body, placeholder: "Пароль" %>
     </div>
   </section>
+
+
+  <%= form_for @social_account do |f| %>
+    <%= f.label :first_name %>:
+    <%= f.text_field :body %><br />
+
+    <%= f.label :last_name %>:
+    <%= f.text_field :body %><br />
+
+    <%= f.submit %>
+  <% end %>
 
 
   <section class="data_output">
